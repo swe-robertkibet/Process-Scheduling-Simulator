@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scheduling Simulator</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Section -->
+    <div id="top-section">
+      <!-- Header Section -->
+      <header>
+        <div class="container">
+          <h1 class="logo">Process Scheduling Simulator</h1>
+          <p class="tagline">Optimize Your Process Management</p>
+          <nav>
+            <ul>
+              <li><a href="#feature1">Try It</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#" id="contactLink">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Introduction Section -->
+      <section id="introduction" class="section">
+        <div class="container">
+          <h2>Welcome to the Process Scheduling Simulator</h2>
+          <p>
+            Our simulator helps you understand and visualize different process
+            scheduling algorithms, allowing you to optimize resource utilization
+            and improve system performance.
+          </p>
+          <img
+            src="/img/mind-map.svg"
+            alt="Chip Memory Icon"
+            style="fill: #333"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- Feature 1 -->
+    <section id="feature1" class="feature">
+      <div class="container">
+        <h2>FCFS Scheduling</h2>
+        <img src="img/cpu-icon.svg" alt="Feature 1" />
+        <p>
+          First-Come First-Served (FCFS) Scheduling is one of the simplest CPU
+          scheduling algorithms. In FCFS scheduling, processes are executed in
+          the order they arrive in the ready queue. The process that arrives
+          first gets executed first, hence the name "First-Come First-Served."
+          <br />
+          <br />
+          Simulate First-Come First-Served scheduling algorithm to understand
+          its behavior.
+        </p>
+        <div class="simulate-button">
+          <button class="sim-btn" onclick="redirectToFcfsSimulation()">
+            SIMULATE NOW
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 2 -->
+    <section id="feature2" class="feature">
+      <div class="container">
+        <h2>SRT Scheduling</h2>
+        <img src="img/motherboard-icon.svg" alt="Feature 2" />
+        <p>
+          Shortest Remaining Time (SRT) Scheduling is a preemptive CPU
+          scheduling algorithm that selects the process with the shortest
+          remaining burst time to execute next. Unlike FCFS, which always
+          executes the first arrived process, SRT continuously compares the
+          remaining burst times of all processes and selects the one with the
+          shortest remaining time to execute next. If a new process arrives with
+          a shorter burst time than the currently executing process, the current
+          process is preempted, and the new process is executed.
+          <br />
+          <br />
+          Experience Shortest Remaining Time scheduling algorithm with
+          preemption for efficient process execution.
+        </p>
+        <div class="simulate-button">
+          <button class="sim-btn" onclick="redirectToSrtSimulation()">
+            SIMULATE NOW
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 3 -->
+    <section id="feature3" class="feature">
+      <div class="container">
+        <h2>RR Scheduling</h2>
+        <img src="img/chip-memory-icon.svg" alt="Feature 3" />
+        <p>
+          Round-Robin (RR) Scheduling is a preemptive CPU scheduling algorithm
+          that allocates CPU time to each process in equal-sized time slices,
+          typically referred to as time quantum or time slice. When a process's
+          time quantum expires, it's preempted, and the CPU is allocated to the
+          next process in the ready queue. If a process has more work to do,
+          it's placed back in the queue to await its turn again. This cycle
+          continues until all processes complete their execution.
+          <br />
+          <br />
+          Explore Round-Robin scheduling algorithm with specified time quantum
+          for fair resource allocation.
+        </p>
+        <div class="simulate-button">
+          <button class="sim-btn" onclick="redirectToRrSimulation()">
+            SIMULATE NOW
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p>
+          Our simulator operates by simulating the execution of multiple
+          processes on a CPU using the Shortest Remaining Time (SRT) scheduling
+          algorithm. Here's a breakdown of its operation:
+        </p>
+        <ol>
+          <li>
+            <p>
+              <strong>Input Gathering:</strong>
+              The simulator collects input from the user, including the number
+              of processes, their arrival times, and burst times. These
+              parameters are crucial for accurately simulating the scheduling
+              algorithm.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>SRT Algorithm Execution:</strong> Once the input is
+              gathered, the simulator implements the Shortest Remaining Time
+              (SRT) scheduling algorithm. This algorithm selects the process
+              with the shortest remaining burst time to execute next. If a new
+              process arrives with a shorter burst time than the currently
+              running process, it preempts the current process and starts
+              executing the new one.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Time Quantum Handling:</strong> Unlike traditional
+              Round-Robin scheduling, SRT dynamically adjusts the time quantum
+              based on the remaining burst times of the processes. This ensures
+              that shorter processes are given priority, potentially leading to
+              lower average turnaround and waiting times.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Process Execution and Tracking:</strong> The simulator
+              tracks the execution of each process, updating completion times,
+              turnaround times, and waiting times as the simulation progresses.
+              It also calculates the total turnaround time and total waiting
+              time for all processes.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Result Presentation:</strong> Once the simulation
+              completes, the simulator presents the results to the user. This
+              includes detailed information such as completion times, turnaround
+              times, waiting times for each process, as well as the average
+              turnaround time and average waiting time across all processes.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Visualization:</strong> Additionally, the simulator
+              provides a visual representation of the scheduling using a Gantt
+              chart. This chart displays the timeline of process execution,
+              highlighting the start and end times of each process along with
+              their respective quantum usage.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are passionate about creating innovative solutions to complex
+          problems in the field of computer science and technology. Our team
+          consists of dedicated professionals with diverse backgrounds and
+          expertise, united by a shared goal of driving positive change through
+          technology.
+        </p>
+        <br />
+        <p>
+          With a commitment to excellence and a collaborative approach, we
+          strive to deliver cutting-edge software solutions that empower
+          businesses and individuals to succeed in today's dynamic digital
+          landscape. Our mission is to harness the power of technology to make a
+          meaningful impact on the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Process Scheduling Simulator. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://twitter.com/swe_robertkibet"
+              ><img src="/img/X_logo_2023_original.svg.png" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/21stoic"
+              ><img src="img/instagram-logo.svg" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/robert-kibet/"
+              ><img src="img/linkedin-logo.png" alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/swe-robertkibet"
+              ><img src="img/github-logo.svg" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="whatsapp://send?phone=+254714200683"
+              ><img src="img/WhatsApp-logo.png" alt="WhatsApp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

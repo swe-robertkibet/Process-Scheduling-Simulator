@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+
+.homeIcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.homeIcon a {
+  color: #ccc;
+  transition: .3s ease-in-out;
+}
+
+.homeIcon a:hover {
+  color: #F05941;
+}
+
+#results {
+    background-color: #ccc;
+    color: #333;
+}
+
+#results .resultsHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px !important;
+    color: #F05941;
+    
+}
+
+#explainer h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px !important;
+  color: #F05941;
+}
+
+#explainer p {
+  color: #333;
+}
+
+#results .resultsAverage {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center-align text */
+    padding: 10px;
+}
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #resultsTable th, #resultsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #resultsTable th {
+    background-color: #f2f2f2;
+  }
+  
+  #resultsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #resultsTable tr:hover {
+    background-color: #ddd;
+  }
+.inputForm {
+    background-color: #F05941;
+}
+
+.inputForm form label {
+    color: #1A1B2C;
+}
+
+.inputForm form #submitBtn {
+    color: #ccc;
+    background-color: #1A1B2C;
+    scale: 1;
+    transition: .3s ease;
+}
+
+.inputForm form #submitBtn:hover {
+    color: #ccc;
+    background-color: #2d2e42;
+}
+
+.inputForm form input {
+    background-color: #ccc;
+}
+
+  table:hover {
+    cursor: pointer;
+  }
+      h1 {
+        text-align: center;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+
+
+      header {
+        height: 20vh;
+        background-color: #1A1B2C;
+      }
+
+      header {
+        color: #ccc;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      
+      /* styles.css */
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #resultsTable th, #resultsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+
+  .gantt-title {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #F05941; /* Change the color as needed */
+    margin-bottom: 10px;
+}
+
+  #resultsTable th {
+    background-color: #f2f2f2;
+  }
+  
+  #resultsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #resultsTable tr:hover {
+    background-color: #ddd;
+  }
+  
+  
+  #ganttChart {
+    display: flex;
+    justify-content: center;
+}
+
+#explainer {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#explainer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#explainer p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.gantt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+.gantt-bar {
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.gantt-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+
+
+  .simultionInput {
+    min-height: 80vh;
+    background-color: #ccc;
+  }
+
+  /* Footer */
+footer {
+    background-color: #1A1B2C;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    }
+    
+    footer p {
+        margin: 10px;
+    }
+    
+    .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .social-links li {
+    margin-right: 10px;
+    }
+    
+    .social-links li:last-child {
+    margin-right: 0;
+    }
+    
+    .social-links li a img {
+    width: 30px;
+    height: 30px;
+    }

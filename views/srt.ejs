@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortest Remaining Time</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/simulation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="homeIcon">
+          <a href="/">
+            <i class="fa fa-home"> Home </i>
+          </a>
+        </div>
+
+        <div class="pageTitle">
+          <h1>Shortest Remaining Time (SRT) Scheduling Simulation</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="simultionInput">
+      <div class="inputForm">
+        <form id="srtForm">
+          <label for="numProcesses">Number of Processes</label>
+          <input
+            type="number"
+            id="numProcesses"
+            name="numProcesses"
+            min="1"
+            required
+          />
+          <div id="processInputs"></div>
+          <input id="submitBtn" type="submit" value="Simulate" />
+        </form>
+      </div>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="ganttChart"></div>
+    <!-- Footer Section -->
+    <div id="explainer"></div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Process Scheduling Simulator. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://twitter.com/swe_robertkibet"
+              ><img src="/img/X_logo_2023_original.svg.png" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/21stoic"
+              ><img src="img/instagram-logo.svg" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/robert-kibet/"
+              ><img src="img/linkedin-logo.png" alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/swe-robertkibet"
+              ><img src="img/github-logo.svg" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="whatsapp://send?phone=+254714200683"
+              ><img src="img/WhatsApp-logo.png" alt="WhatsApp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/js/srt.js"></script>
+  </body>
+</html>
