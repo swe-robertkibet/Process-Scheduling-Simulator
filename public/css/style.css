@@ -142,12 +142,15 @@ height: 30px;
 /* FEATURES STYLES */
 #feature1 {
 background-color: #F05941;
+text-align: justify;
 }
 #feature2 {
 background-color: #BE3144;
+text-align: justify;
 }
 #feature3 {
 background-color: #F05941;
+text-align: justify;
 }
 
 /* How It Works Section */
@@ -157,6 +160,7 @@ background-color: #F05941;
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
+    text-align: center;
 }
  
   #how-it-works .container {
@@ -236,6 +240,7 @@ flex-direction: column;
 flex: 1; /* Fill the remaining space */
 background-color: #ccc;
 color: #333;
+text-align: center;
 }
 
 /* CONTAINER PARAGRAPH AND HEADING*/
@@ -322,15 +327,46 @@ button[type="submit"]:hover {
 
 
 @media screen and (max-width: 768px) {
-.feature img {
-    max-width: 80px;
-}
-
-}
-
-@media screen and (max-width: 680px) {
+    .feature img {
+      max-width: 80px !important;
+    }
+  
+    h1 {
+      font-size: 24px !important;
+    }
+  
+    h2 {
+      font-size: 20px !important;
+    }
+  
+    .tagline {
+      font-size: 10px !important;
+    }
+    header a {
+        font-size: 10px !important;
+    }
+  
+    #how-it-works h2,
+    #about h2 {
+      font-size: 2rem !important;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
     #about p {
-        letter-spacing: 0 !important;
+      letter-spacing: 0 !important;
+    }
+
+    header h1 {
+        font-size: 16px !important;
+    }
+
+    section button {
+        margin-bottom: 20px !important;
     }
     
-}
+    body p {
+        font-size: 14px !important;
+    }
+  }
+  

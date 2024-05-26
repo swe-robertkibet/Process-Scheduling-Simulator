@@ -283,3 +283,84 @@ footer {
     width: 30px;
     height: 30px;
     }
+
+    /* Responsive Media Queries */
+/* Responsive Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .homeIcon {
+    font-size: 20px;
+  }
+
+  .pageTitle h1 {
+    font-size: 20px;
+  }
+
+
+  #results {
+    padding: 20px;
+  }
+
+  .gantt-title {
+    font-size: 20px !important;
+    margin-bottom: 5px;
+  }
+
+  #resultsTable {
+    font-size: 12px;
+  }
+
+  #resultsTable th,
+  #resultsTable td {
+    padding: 6px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .homeIcon {
+    font-size: 18px;
+  }
+
+  .pageTitle h1 {
+    font-size: 22px;
+  }
+
+  #results {
+    padding: 30px;
+  }
+
+  .gantt-title {
+    font-size: 22px !important;
+    margin-bottom: 10px;
+  }
+
+  #resultsTable {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .homeIcon {
+    font-size: 16px;
+  }
+
+  .pageTitle h1 {
+    font-size: 24px;
+  }
+
+  #results {
+    padding: 40px;
+  }
+
+  .gantt-title {
+    font-size: 24px !important;
+    margin-bottom: 15px;
+  }
+
+  #resultsTable {
+    font-size: 16px;
+  }
+}
